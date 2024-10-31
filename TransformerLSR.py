@@ -473,7 +473,7 @@ class TransformerLSR(nn.Module):
 
 
 
-    #use pure Monte Carlo for now; correct weights can be added in later
+    #Monte Carlo
     # predicting time
     # works in instance mode; batch mode is not supported currently, and provides limited computation benefit:
     # the amount of samples needed is batch_size*visit_num*thinningsample_num*MCsample_num, need to break up into minibatches anyway
